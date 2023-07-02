@@ -17,6 +17,7 @@ export default function ListItem({ title, subTitle, image }) {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+    padding: 15,
   },
 
   image: {
@@ -24,7 +25,6 @@ const styles = StyleSheet.create({
     height: 70,
     borderRadius: 35,
     marginRight: 10,
-    borderStyle: 'solid',
     borderColor: colors.black,
     borderWidth: 1,
   },
