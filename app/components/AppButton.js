@@ -1,5 +1,5 @@
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
-import colors from '../config/color';
+import colors from '../config/colors';
 
 export default function AppButton({ title, onPress, color = 'primary' }) {
   return (

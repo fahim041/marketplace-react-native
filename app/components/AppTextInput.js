@@ -13,7 +13,7 @@ export default function AppTextInput({ icon, ...otherprops }) {
           color={defaultStyles.colors.medium}
         />
       )}
-      <TextInput style={defaultStyles.text} {...otherprops} />
+      <TextInput style={[defaultStyles.text, styles.input]} {...otherprops} />
     </View>
   );
 }
@@ -31,5 +31,9 @@ const styles = StyleSheet.create({
   icon: {
     marginRight: 10,
     marginTop: 3,
+  },
+
+  input: {
+    flex: 1,
   },
 });
