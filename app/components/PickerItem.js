@@ -1,6 +1,6 @@
 import { TouchableOpacity, StyleSheet } from 'react-native';
 import AppText from './AppText';
-import ListItemSeparator from './ListItemSeparator';
+import { ListItemSeparator } from './Lists';
 
 export default function PickerItem({ item: { label }, onPress }) {
   return (
