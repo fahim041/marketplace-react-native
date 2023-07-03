@@ -3,6 +3,7 @@ import {
   GestureHandlerRootView,
   Swipeable,
 } from 'react-native-gesture-handler';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import AppText from './AppText';
 import colors from '../config/colors';
 
@@ -23,11 +24,16 @@ export default function ListItem({
             {IconComponent}
             {image && <Image style={styles.image} source={image} />}
             <View style={styles.detailContainer}>
-              <AppText style={styles.title}>{title}</AppText>
+              <AppText style={styles.title} numberOfLines={1}>
+                {title}
+              </AppText>
               {subTitle && (
-                <AppText style={styles.subtitle}>{subTitle}</AppText>
+                <AppText style={styles.subtitle} numberOfLines={2}>
+                  {subTitle}
+                </AppText>
               )}
             </View>
+            <MaterialCommunityIcons name="chevron-right" size={25} />
           </View>
         </TouchableHighlight>
       </Swipeable>
@@ -39,6 +45,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     padding: 15,
+    alignItems: 'center',
   },
 
   image: {
@@ -60,5 +67,6 @@ const styles = StyleSheet.create({
   detailContainer: {
     marginLeft: 10,
     justifyContent: 'center',
+    flex: 1,
   },
 });
