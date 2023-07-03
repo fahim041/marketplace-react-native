@@ -1,5 +1,5 @@
 import { useFormikContext } from 'formik';
-import AppTextInput from '../AppTextInput';
+import AppTextInput from '../TextInput';
 import ErrorMessage from './ErrorMessage';
 
 export default function AppFormField({ name, ...otherprops }) {

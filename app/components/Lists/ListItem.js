@@ -4,7 +4,7 @@ import {
   Swipeable,
 } from 'react-native-gesture-handler';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import AppText from '../AppText';
+import AppText from '../Text';
 import colors from '../../config/colors';
 
 export default function ListItem({
