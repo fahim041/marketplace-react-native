@@ -55,5 +55,7 @@ export default function ListingEditScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    padding: 5,
+  },
 });
